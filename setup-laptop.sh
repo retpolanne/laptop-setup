@@ -40,5 +40,9 @@ fi
 echo setting up vimrc
 cp vimrc $HOME/.vimrc
 
+echo "export PATH=\$HOME/Library/Python/3.9/bin:\$PATH" >> $HOME/.zshrc
+
+pip3 install hyfetch
+
 echo setting up gh
 gh auth login -p ssh -w

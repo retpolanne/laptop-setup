@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Custom plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'Yggdroot/indentLine'
+Plugin 'LnL7/vim-nix'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,3 +33,6 @@ filetype plugin indent on    " required
 " Custom Setup
 syntax on
 set number
+
+" nerdtree toggle
+map <C-n> :NERDTreeToggle<CR>
