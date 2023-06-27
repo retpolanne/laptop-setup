@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Yggdroot/indentLine'
 Plugin 'LnL7/vim-nix'
+Plugin 'hachy/eva01.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,3 +37,4 @@ set number
 
 " nerdtree toggle
 map <C-n> :NERDTreeToggle<CR>
+colorscheme eva01
