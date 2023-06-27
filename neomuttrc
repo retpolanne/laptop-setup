@@ -1,0 +1,30 @@
+# vim: filetype=muttrc
+
+set editor = "vim"
+
+set my_name = ""
+
+set realname = ""
+set smtp_url = "smtp://@@:587"
+set smtp_pass = "`op item get --vault Arch Posteo --fields label=password`"
+set folder = "imap://@@:143"
+set imap_pass = "`op item get --vault Arch Posteo --fields label=password`"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+set from = ""
+
+set sort = threads
+set sort_aux = reverse-last-date-received
+
+color header        brightcyan          default             '^From:'
+color header        brightyellow        default             '^Subject:'
+color header        black               brightgreen         '^User-Agent:.*Mutt'
+color header        black               green               '^User-Agent: Mozilla/5.0.*Linux'
+
+color body          brightcyan          default             "[-a-z_0-9.+]+@[-a-z_0-9.]+"
+color body          cyan				default             "((ftp|http|https)://|news:)[^ >)\"\t]+"
+color body          white               brightblue          "\\[[0-9]+\\]"
+color body          yellow              default             "\\[\\.\\.\\.?\\]"
